@@ -1,0 +1,24 @@
+{
+  "name": "AmbulnzLLC-challenge-to-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelsilvadev/AmbulnzLLC-challenge-to-study.git"
+  },
+  "keywords": [],
+  "author": "Samuel Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelsilvadev/AmbulnzLLC-challenge-to-study/issues"
+  },
+  "homepage": "https://github.com/samuelsilvadev/AmbulnzLLC-challenge-to-study#readme",
+  "dependencies": {
+    "express": "4.x"
+  }
+}
