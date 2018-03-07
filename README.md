@@ -14,4 +14,4 @@ This project is a copy of [AmbulnzLLC-frontend-challenge](https://github.com/Amb
 
 ## License
 
-Samuel Silva &copy; MIT
+Samuel Silva &copy; [MIT](https://github.com/samuelsilvadev/AmbulnzLLC-challenge-to-study/blob/master/LICENSE.md)
