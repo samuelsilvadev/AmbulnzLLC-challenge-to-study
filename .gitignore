@@ -66,5 +66,7 @@ typings/
 .sass-cache/
 *.css.map
 
-
 # End of https://www.gitignore.io/api/sass,node
+
+app/*.js
+app/*.map
