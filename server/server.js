@@ -16,4 +16,4 @@ app.get('/order/', (req, res) => {
 });
 
 app.listen(5000);
-console.log('server running af http://localhost:8080/');
+console.log('server running af http://localhost:5000/');
