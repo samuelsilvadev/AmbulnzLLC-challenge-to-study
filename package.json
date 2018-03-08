@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server/server.js"
+    "server": "node server/server.js",
+    "tsc:w": "tsc -w",
+    "start": "npm run tsc:w",
+    "typings": "typings"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,25 @@
   },
   "homepage": "https://github.com/samuelsilvadev/AmbulnzLLC-challenge-to-study#readme",
   "dependencies": {
-    "express": "4.x"
+    "@angular/common": "^5.2.7",
+    "@angular/compiler": "^5.2.7",
+    "@angular/core": "^5.2.7",
+    "@angular/forms": "^5.2.7",
+    "@angular/http": "^5.2.7",
+    "@angular/platform-browser": "^5.2.7",
+    "@angular/platform-browser-dynamic": "^5.2.7",
+    "@angular/router": "^5.2.7",
+    "angular2-in-memory-web-api": "0.0.21",
+    "core-js": "2.5.3",
+    "express": "4.x",
+    "materialize-css": "^0.100.2",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.6",
+    "systemjs": "^0.21.0",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "typescript": "2.7.2",
+    "typings": "2.1.1"
   }
 }
