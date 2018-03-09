@@ -1,4 +1,6 @@
+import { AppService } from './app.service';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
     selector: 'app',
@@ -6,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+    pizzas$: Observable<any>;
+
+    constructor(private _service: AppService) {
+        this.pizzas$ = this._service.getAllPizzas();
+    }
 }
