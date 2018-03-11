@@ -65,6 +65,47 @@
     width: 50px;
 }
 
+.order {
+    background-color: #e5ff3a;
+    height: 12vh;
+    margin-bottom: .3vh;
+    width: 100%;
+}
+
+.order__title {
+    text-align: center;
+    font-weight: normal;
+}
+
+.order__container {
+    display: flex;
+}
+
+.order__pizzas {
+    height: 7vh;
+    overflow: auto;
+    padding-left: 5vw;
+    width: 50%;
+}
+
+.order__pizzas>ul {
+    list-style-type: none;
+}
+
+.order__total-price {
+    align-self: center;
+    text-align: center;
+    width: 50%;
+}
+
+.order__total-price>span {
+    font-size: 28px;
+}
+
+.order__total-price>span::before {
+    content: '$';
+}
+
 @media screen and (max-width: 420px) {
     .pizza__details__ingredients {
         width: 70%;
