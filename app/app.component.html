@@ -1,4 +1,21 @@
+<div>
 
-<ul>
-    <li *ngFor="let pizza of pizzas$ | async">{{ pizza.name }}</li>
-</ul>
+</div>
+<div class="container">
+    <div class="pizza__container" *ngFor="let pizza of pizzas$ | async">
+        <div class="pizza__details">
+            <div class="pizza__details__name">{{ pizza.name }}</div>
+            <div class="display--flex">
+                <div class="pizza__details__ingredients">
+                    <ul>
+                        <li *ngFor="let ingredient of pizza.ingredients"> {{ ingredient }}</li>
+                    </ul>
+                </div>
+                <div class="pizza__details__price">{{ pizza.price }}</div>
+            </div>
+        </div>
+        <div class="pizza__button">
+            <button class="float--button">Add</button>
+        </div>
+    </div>
+</div>
