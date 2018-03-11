@@ -1,7 +1,19 @@
-<div>
-
-</div>
 <div class="container">
+    <div *ngIf="listOrders.length > 0">
+        <div class="order">
+            <h5 class="order__title">Order summary</h5>
+            <div class="order__container">
+                <div class="order__pizzas">
+                    <ul>
+                        <li *ngFor="let order of listOrders"> {{ order.name }}</li>
+                    </ul>
+                </div>
+                <div class="order__total-price">
+                    <span>{{ totalPrice }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="pizza__container" *ngFor="let pizza of pizzas$ | async">
         <div class="pizza__details">
             <div class="pizza__details__name">{{ pizza.name }}</div>
@@ -15,7 +27,7 @@
             </div>
         </div>
         <div class="pizza__button">
-            <button class="float--button">Add</button>
+            <button class="float--button" (click)="order(pizza)">Add</button>
         </div>
     </div>
 </div>

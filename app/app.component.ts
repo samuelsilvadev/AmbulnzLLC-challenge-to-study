@@ -9,9 +9,18 @@ import { Observable } from 'rxjs/Observable';
 })
 export class AppComponent {
 
+    listOrders: Array<any> = [];
+    totalPrice = 0;
     pizzas$: Observable<any>;
 
     constructor(private _service: AppService) {
         this.pizzas$ = this._service.getAllPizzas();
+    }
+
+    order(pizza: any) {
+        this._service.makeOrder().subscribe(data => {
+            this.totalPrice += pizza.price;
+            this.listOrders.push(pizza);
+        })
     }
 }
