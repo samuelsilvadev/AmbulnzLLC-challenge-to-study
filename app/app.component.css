@@ -4,67 +4,6 @@
     width: 90%;
 }
 
-.pizza__container {
-    display: flex;
-}
-
-.pizza__details {
-    background-color: #fafafa;
-    height: 12vh;
-    margin-bottom: .3vh;
-    width: 90%;
-}
-
-.pizza__button {
-    background-color: rgba(19, 206, 102, 23);
-    height: 12vh;
-    position: relative;
-    width: 10%;
-}
-
-.pizza__button>button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.pizza__details__name {
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-
-.pizza__details__ingredients {
-    overflow-y: auto;
-    height: 7vh;
-    padding-left: 5vw;
-    width: 85%;
-}
-
-.pizza__details__ingredients>ul {
-    list-style-type: none;
-}
-
-.pizza__details__price {
-    font-size: 28px;
-    text-align: center;
-    width: 15%;
-}
-
-.pizza__details__price::before {
-    content: '$';
-}
-
-.float--button {
-    background-color: #3b4859;
-    border-radius: 50%;
-    border: none;
-    height: 50px;
-    width: 50px;
-}
-
 .order {
     background-color: #e5ff3a;
     height: 12vh;
@@ -103,6 +42,72 @@
 }
 
 .order__total-price>span::before {
+    content: '$';
+}
+
+.pizza__container {
+    display: flex;
+}
+
+.pizza__details {
+    background-color: #fafafa;
+    height: 12vh;
+    margin-bottom: .3vh;
+    width: 90%;
+}
+
+.pizza__button {
+    background-color: rgba(19, 206, 102, 23);
+    height: 12vh;
+    position: relative;
+    width: 10%;
+}
+
+.pizza__button>button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.pizza__button>button > svg {
+    height: 50%;
+    position: relative;
+    top: 1px;
+    width: 50%;
+}
+
+.pizza__button>button path {
+    display: inline-block;
+    fill: #fff;
+    background-color: #fff;
+}
+
+.pizza__details__name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pizza__details__ingredients {
+    overflow-y: auto;
+    height: 7vh;
+    padding-left: 5vw;
+    width: 85%;
+}
+
+.pizza__details__ingredients>ul {
+    list-style-type: none;
+}
+
+.pizza__details__price {
+    font-size: 28px;
+    text-align: center;
+    width: 15%;
+}
+
+.pizza__details__price::before {
     content: '$';
 }
 
