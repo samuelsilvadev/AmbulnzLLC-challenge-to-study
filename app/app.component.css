@@ -71,7 +71,7 @@
     transform: translate(-50%, -50%)
 }
 
-.pizza__button>button > svg {
+.pizza__button>button>svg {
     height: 50%;
     position: relative;
     top: 1px;
@@ -117,5 +117,11 @@
     }
     .pizza__details__price {
         width: 30%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pizza__button {
+        width: 20%;
     }
 }
