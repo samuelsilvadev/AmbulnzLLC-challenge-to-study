@@ -17,3 +17,11 @@ body {
 .display--flex {
     display: flex;
 }
+
+.float--button {
+    background-color: #3b4859;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
