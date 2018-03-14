@@ -8,7 +8,7 @@
     "server": "node server/server.js",
     "tsc:w": "tsc -w",
     "tsc": "npm run tsc:w",
-    "start": "./node_modules/http-server/bin/http-server -p 8787",
+    "start": "./node_modules/http-server/bin/http-server -p 8787 | npm run server | npm run tsc",
     "typings": "typings"
   },
   "repository": {

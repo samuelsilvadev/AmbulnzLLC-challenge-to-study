@@ -4,7 +4,10 @@ This project is a copy of [AmbulnzLLC-frontend-challenge](https://github.com/Amb
 
 ## How to install
 
-...
+- npm install
+- npm start
+- go to localhost:8787
+- be happy!!
 
 ## Contacts
 
