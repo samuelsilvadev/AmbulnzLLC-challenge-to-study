@@ -64,11 +64,17 @@
 }
 
 .pizza__button>button {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+.pizza__button>button:hover {
+    background-color: rgb(43, 122, 94);
 }
 
 .pizza__button>button>svg {
